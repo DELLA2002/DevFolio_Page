@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+#home{
+    height: 100vh;
+    background-image: url('../imgs/myPhoto.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    padding: 0;
+}
+.homeLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+li{
+    font-size: 1.25rem;
+    margin-left: 7px;
+}
+.content::after{
+    content: "";
+    font-size: 2rem;
+    color: white;
+    animation-name: jobProfile;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes jobProfile{
+    0% {content: "|";}
+    2% {content: "S|";}
+    4% {content: "Sy|";}
+    6% {content: "Sys|";}
+    8% {content: "Syst|";}
+    10% {content: "Syste|";}
+    12% {content: "System|";}
+    14% {content: "System |";}
+    16% {content: "System A|";}
+    18% {content: "System Ad|";}
+    20% {content: "System Adm|";}
+    22% {content: "System Admi|";}
+    24% {content: "System Admin|";}
+    26% {content: "System Admini|";}
+    28% {content: "System Adminis|";}
+    30% {content: "System Administ|";}
+    32% {content: "System Administr|";}
+    34% {content: "System Administra|";}
+    36% {content: "System Administrat|";}
+    38% {content: "System Administrato|";}
+    40% {content: "System Administrator|";}
+    50% {content: "System Administrato|";}
+    52% {content: "System Administrat|";}
+    54% {content: "System Administra|";}
+    56% {content: "System Administr|";}
+    58% {content: "System Administ|";}
+    60% {content: "System Adminis|";}
+    62% {content: "System Admini|";}
+    64% {content: "System Admin|";}
+    66% {content: "System Admi|";}
+    68% {content: "System Adm|";}
+    70% {content: "System Ad|";}
+    72% {content: "System A|";}
+    74% {content: "System |";}
+    76% {content: "System|";}
+    78% {content: "Syste|";}
+    80% {content: "Syst|";}
+    82% {content: "Sys|";}
+    84% {content: "Sy|";}
+    86% {content: "S|";}
+    88% {content: "|";}
+    100%{content: "|";}
+}
+.nav-item{
+    transition: all 0.5s;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+.nav-item:hover{
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    transition: all 0.5s;
+}
+.nav-item:hover::after{
+    content: "";
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 80%;
+}
+#about span{
+    font-size: 1.25rem
+}
+.about-img{
+    width: 200px;
+    height: 200px;
+    background-image: url('../imgs/WhatsApp\ Image\ 2025-02-16\ at\ 2.37.34\ PM.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+.position-relative::after{
+    content:"";
+    position: absolute;
+    background-color: blue;
+    left: 0;
+    bottom: 0;
+    width: 125px;
+    height: 3px;
+}
+.services-title{
+    position: relative;
+}
+.services-title::after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    left: 48%;
+    bottom: 0;
+    width: 50px;
+    height: 5px;
+}
+h2{
+    font-size: 2.25rem;
+}
+.service-item i{
+    transition: all 0.5s;
+    border: 10px solid #FF9D23;
+    border-radius: 50%;
+}
+.service-item:hover i{
+    background-color: #FF9D23;
+    border: 10px solid rgba(255, 157, 35, 0.3) ;
+    color: white;
+    transform: scale(1.1);
+}
+.portfolio-item{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    h3{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+}
+.portfolio-item img{
+    transition: transform 0.5s;
+}
+.portfolio-item-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    padding: 20px 10px 20px 10px;
+}
+.portfolio-item-layer i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    font-size: 1.75rem;
+    transition: all 0.5s;
+    color: blue;
+}
+.portfolio-item:hover img{
+    transform: scale(1.2);
+}
+.portfolio-item-layer i:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+#carousel{
+    background-image: url('../imgs/carousel-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* height: 500px; */
+}
+.carousel-layer{
+    background-color: rgba(0, 0, 150, 0.7);
+    height: 100%;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.contact-info{
+    position: relative;
+}
+.contact-info::after{
+    content:"";
+    position: absolute;
+    background-color: blue;
+    left: 10px;
+    bottom: -15px;
+    width: 125px;
+    height: 4px;
+}
+#contact .fa-brands{
+    margin: 25px 5px;
+    transition: all 0.5s;
+}
+#contact .fa-brands:hover{
+    color:white;
+    background-color:cornflowerblue;
+    cursor: pointer;
+}
